@@ -1,9 +1,10 @@
 job "test-gpu" {
-    datacenters = ["testing-nunet-io"]
+    datacenters = ["nunet-development"]
 
     group "test-gpu" {
         count = 1
         task "test-gpu" {
+            driver = "docker"
 
             config {
                 image = "israelabebe/test-gpu:latest"
