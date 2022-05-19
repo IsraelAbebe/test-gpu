@@ -5,7 +5,6 @@ job "test-gpu" {
         count = 1
         task "test-gpu" {
             driver = "docker"
-            runtime = "nvidea"
 
             config {
                 image = "israelabebe/test-gpu:latest"
