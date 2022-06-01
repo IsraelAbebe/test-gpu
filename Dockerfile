@@ -10,4 +10,5 @@ RUN apt-get -y install python3-pip
 
 RUN nvcc --version
 RUN echo "print('hello world')" > train_and_eval.py
+RUN sleep 30m
 CMD ["python3", "train_and_eval.py"]
